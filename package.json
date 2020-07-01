@@ -1,0 +1,23 @@
+{
+  "name": "serverless-lighthouse",
+  "version": "1.0.6",
+  "description": "Preconfigured package for running lighthouse in a serverless function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vikram Patwardhan",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-aws-lambda": "^3.1.1",
+    "chrome-launcher": "^0.13.3",
+    "lighthouse": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=10.16.1",
+    "npm": ">=6.10.3"
+  },
+  "keywords": [
+    "lighthouse", "lambda", "chrome", "serverless"
+  ]
+}

@@ -1,0 +1,25 @@
+# IDE ignores
+.idea
+
+# OS Files
+*.DS_Store
+
+# Node
+node_modules
+.npm
+npm-debug.log*
+.npmignore
+
+# Test reports
+test-reports
+coverage
+junit.xml
+reports
+
+# Test artifacts
+test/data/*.json
+
+# Build files
+.serverless
+.build
+
