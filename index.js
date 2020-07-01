@@ -68,6 +68,6 @@ function getDefaultLighthouseFlags() {
 
 module.exports = {
     runLighthouse: runLighthouse,
-    getDefaultChromeFlags: getDefaultChromeFlags,
-    getDefaultLighthouseFlags: getDefaultLighthouseFlags
+    defaultChromeFlags: getDefaultChromeFlags(),
+    defaultLighthouseFlags: getDefaultLighthouseFlags()
 };

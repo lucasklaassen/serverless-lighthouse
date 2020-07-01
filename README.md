@@ -37,8 +37,8 @@ Note: It is NOT recommended to modify the `port` property in the `lighthouseFlag
 
 ```ts
 const lighthouse = require('serverless-lighthouse');
-const chromeFlags = lighthouse.getDefaultChromeFlags();
-const lighthouseFlags = lighthouse.getDefaultLighthouseFlags();
+const chromeFlags = lighthouse.defaultChromeFlags;
+const lighthouseFlags = lighthouse.defaultLighthouseFlags;
 ``` 
 
 The default `lighthouseConfig` (below) is barebones and can be modified as needed.
