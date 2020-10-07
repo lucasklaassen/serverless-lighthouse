@@ -1,6 +1,6 @@
 {
   "name": "serverless-lighthouse-lk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Preconfigured package for running lighthouse in a serverless function",
   "main": "index.js",
   "homepage": "https://github.com/lucasklaassen/serverless-lighthouse#readme",
