@@ -8,7 +8,7 @@ It took me entirely too long to get Chrome, AWS Lambda, and Lighthouse to play n
 ## Installation
 
 ```bash
-npm install --save serverless-lighthouse
+npm install --save serverless-lighthouse-lk
 ```
 
 ### Usage
@@ -17,10 +17,10 @@ In your Lambda function code:
 
 ```ts
 //Traditional node require
-const lighthouse = require('serverless-lighthouse');
+const lighthouse = require('serverless-lighthouse-lk');
 
 //ES6 import
-import lighthouse from 'serverless-lighthouse';
+import lighthouse from 'serverless-lighthouse-lk';
 
 const results = await lighthouse.runLighthouse(targetUrl);
 ```
@@ -36,7 +36,7 @@ Default values will be used for optional arguments when they are not provided. T
 Note: It is NOT recommended to modify the `port` property in the `lighthouseFlags`.
 
 ```ts
-const lighthouse = require('serverless-lighthouse');
+const lighthouse = require('serverless-lighthouse-lk');
 const chromeFlags = lighthouse.defaultChromeFlags;
 const lighthouseFlags = lighthouse.defaultLighthouseFlags;
 ``` 
