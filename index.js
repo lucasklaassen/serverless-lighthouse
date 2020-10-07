@@ -27,7 +27,6 @@ async function runLighthouse(
 
   const lhConfig = lighthouseConfig || {
     extends: "lighthouse:default",
-    logLevel: "info",
   };
 
   const launcherOptions = {
@@ -37,7 +36,7 @@ async function runLighthouse(
   log.setLevel('info');
 
   //Only set the chromePath if actually executing in a lambda
-  if (process.env.LAMBDA_TASK_ROOT && process.env.AWS_EXECUTION_ENV) {
+  if (process.env.ENVIRONMENT === "production") {
     launcherOptions["chromePath"] = await chromium.executablePath;
   }
 
